@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirti - My Beautiful Memories ❤️</title>
+
+    <link rel="stylesheet" href="../css/memories-gallery.css">
+</head>
+<body>
+
+    <div class="floating-heart heart-one">♡</div>
+    <div class="floating-heart heart-two">♡</div>
+    <div class="floating-heart heart-three">♡</div>
+
+    <header class="hero">
+        <p class="eyebrow">A LITTLE CORNER OF MY HEART</p>
+        <h1>My Beautiful Kirti <span>❤️</span></h1>
+        <p class="subtitle">
+            Six pictures, countless memories, and one very special person.
+        </p>
+        <div class="decorative-line">✿ ───── ♡ ───── ✿</div>
+    </header>
+
+    <main class="gallery-section">
+
+        <div class="section-heading">
+            <h2>My Favourite Memories</h2>
+            <p>Every picture has a little piece of my heart.</p>
+        </div>
+
+        <div class="photo-grid">
+
+            <article class="photo-card">
+                <button class="photo-button" data-photo="0" aria-label="View photo 1">
+                    <img src="../images/Photo%201.jpg" alt="Kirti photo 1">
+                    <span class="zoom-icon">＋</span>
+                </button>
+                <div class="caption">
+                    <span class="number">MEMORY 01</span>
+                    <h3>Your Beautiful Smile 🌸</h3>
+                    <p>Tumhari muskurahat mere din ko khoobsurat bana deti hai.</p>
+                </div>
+            </article>
+
+            <article class="photo-card">
+                <button class="photo-button" data-photo="1" aria-label="View photo 2">
+                    <img src="../images/Photo%202.jpg" alt="Kirti photo 2">
+                    <span class="zoom-icon">＋</span>
+                </button>
+                <div class="caption">
+                    <span class="number">MEMORY 02</span>
+                    <h3>My Cutie 🎀</h3>
+                    <p>Tumhari har ada mein kuch na kuch special hai.</p>
+                </div>
+            </article>
+
+            <article class="photo-card">
+                <button class="photo-button" data-photo="2" aria-label="View photo 3">
+                    <img src="../images/Photo%203.jpg" alt="Kirti photo 3">
+                    <span class="zoom-icon">＋</span>
+                </button>
+                <div class="caption">
+                    <span class="number">MEMORY 03</span>
+                    <h3>My Happiness 🌙</h3>
+                    <p>Door rehkar bhi tum mere dil ke sabse kareeb ho.</p>
+                </div>
+            </article>
+
+            <article class="photo-card">
+                <button class="photo-button" data-photo="3" aria-label="View photo 4">
+                    <img src="../images/Photo%204.jpg" alt="Kirti photo 4">
+                    <span class="zoom-icon">＋</span>
+                </button>
+                <div class="caption">
+                    <span class="number">MEMORY 04</span>
+                    <h3>Simply Beautiful 🌹</h3>
+                    <p>Tumhari saadgi hi tumhari sabse pyaari khoobsurati hai.</p>
+                </div>
+            </article>
+
+            <article class="photo-card">
+                <button class="photo-button" data-photo="4" aria-label="View photo 5">
+                    <img src="../images/Photo%205.jpg" alt="Kirti photo 5">
+                    <span class="zoom-icon">＋</span>
+                </button>
+                <div class="caption">
+                    <span class="number">MEMORY 05</span>
+                    <h3>My Princess 🦋</h3>
+                    <p>Har rang tum par khoobsurat lagta hai.</p>
+                </div>
+            </article>
+
+            <article class="photo-card">
+                <button class="photo-button" data-photo="5" aria-label="View photo 6">
+                    <img src="../images/Photo%206.jpg" alt="Kirti photo 6">
+                    <span class="zoom-icon">＋</span>
+                </button>
+                <div class="caption">
+                    <span class="number">MEMORY 06</span>
+                    <h3>Forever Special 💙</h3>
+                    <p>Meri har dua mein tumhari khushi shamil rahe.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <section class="closing-message">
+            <div class="small-heart">♥</div>
+            <h2>Just One More Thing, Kirti...</h2>
+            <p>
+                These are only six pictures, but you have given me
+                countless reasons to smile. You are truly special
+                to me, and I hope you always remember that.
+            </p>
+            <h3>With Love, Preet ❤️</h3>
+        </section>
+
+        <div class="next-section">
+            <p>Our little journey has one more surprise...</p>
+           <a href="surprise.html" class="sorry-button">
+  💌 I'm Sorry, Kirti 💗
+</a>
+            <a href="love-letter.html" class="back-link">
+                ← Back to Love Letter
+            </a>
+        </div>
+
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="closeLightbox"
+                aria-label="Close photo">×</button>
+        <button class="lightbox-arrow previous" id="previousPhoto"
+                aria-label="Previous photo">‹</button>
+        <img id="lightboxImage" src="" alt="Kirti enlarged photo">
+        <button class="lightbox-arrow next" id="nextPhoto"
+                aria-label="Next photo">›</button>
+        <p id="lightboxCounter">1 / 6</p>
+    </div>
+
+    <script src="../js/memories-gallery.js"></script>
+</body>
+</html>

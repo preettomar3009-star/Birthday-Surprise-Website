@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #19001f,
+        #650044,
+        #25004d
+    );
+
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease;
+}
+
+.heart-icon {
+    font-size: 65px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.small-text {
+    color: #ffb6d9;
+    letter-spacing: 4px;
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 48px;
+    color: #ff8acb;
+    text-shadow: 0 0 20px #ff1493;
+}
+
+.message {
+    margin: 25px auto;
+    max-width: 400px;
+    line-height: 1.8;
+    color: #fbd8ed;
+}
+
+button {
+    padding: 16px 35px;
+    border: none;
+    border-radius: 50px;
+
+    background: linear-gradient(
+        90deg,
+        #ff1493,
+        #b026ff
+    );
+
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    box-shadow: 0 0 25px #ff1493;
+    transition: 0.4s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #ff1493;
+}
+
+.footer {
+    margin-top: 45px;
+    color: #ffb6d9;
+    font-size: 13px;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    animation: floatUp 7s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes heartbeat {
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== KIRTI LOVE LETTER COMMON THEME ===== */
+
+:root {
+    --pink: #f6a6b5;
+    --cream: #fff8f1;
+    --light-cream: #ffe1d9;
+    --maroon: #821b3b;
+    --text: #64243a;
+    --rose: #b8325b;
+    --border: #ed9eae;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(ellipse at center top, #fff8f1 0%, transparent 55%),
+        linear-gradient(135deg, #f6a6b5, #ffe1d9, #f4a0b2) !important;
+    background-attachment: fixed !important;
+    color: var(--text) !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+}
+
+h1, h2, h3, h4 {
+    color: var(--maroon) !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+}
+
+p, span, li, small {
+    color: var(--text);
+}
+
+/* Common cards */
+.card,
+.memory-card,
+.story-card,
+.envelope-card,
+.time-box,
+.cake-container,
+.photo-card,
+.letter-paper,
+.sorry-card {
+    background: linear-gradient(145deg, #fffaf4, #ffe8e4) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 22px !important;
+    box-shadow: 0 12px 28px rgba(112,34,57,.16) !important;
+}
+
+/* Buttons */
+button,
+.open-button,
+.next-button,
+.back-button,
+a.button {
+    background: linear-gradient(180deg, #d94c78, #982044) !important;
+    color: #fff !important;
+    border: 1px solid #e99aaf !important;
+    border-radius: 50px !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    transition: .3s ease;
+}
+
+button:hover,
+.open-button:hover,
+.next-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(117,25,57,.25);
+}
+
+/* Countdown */
+.time-box {
+    border: 1px solid var(--border) !important;
+}
+
+.time-box span {
+    color: var(--rose) !important;
+}
+
+/* Photo borders */
+.photo-card img,
+.memory-card img {
+    border: 3px solid #f2c5cb;
+    border-radius: 14px;
+}
+
+/* Soft card animation */
+.memory-card,
+.story-card,
+.photo-card,
+.envelope-card {
+    transition: .35s ease;
+}
+
+.memory-card:hover,
+.story-card:hover,
+.photo-card:hover,
+.envelope-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ==================================
+   HOME PAGE - LOVE LETTER CARD DESIGN
+================================== */
+
+/* Page background */
+body {
+    min-height: 100vh !important;
+    height: auto !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        120deg,
+        #f5a6b5,
+        #fff0e8,
+        #f5a6b5
+    ) !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+}
+
+/* Main centre card */
+.container {
+    width: min(460px, 90%) !important;
+    margin: 35px auto !important;
+    padding: 45px 35px !important;
+
+    background: linear-gradient(
+        145deg,
+        #fffaf4,
+        #ffe8e4
+    ) !important;
+
+    border: 2px dashed #e99bad !important;
+    border-radius: 28px !important;
+
+    box-shadow:
+        0 15px 35px rgba(112, 34, 57, 0.18) !important;
+
+    text-align: center !important;
+    position: relative;
+    z-index: 2;
+}
+
+/* Heart icon */
+.heart-icon {
+    font-size: 65px;
+    margin-bottom: 12px;
+    animation: heartbeat 1.5s infinite;
+}
+
+/* Top small text */
+.small-text {
+    color: #a52a4c !important;
+    font-size: 11px !important;
+    font-weight: bold;
+    letter-spacing: 3px !important;
+    margin: 18px 0 !important;
+}
+
+/* Main heading */
+.container h1 {
+    color: #821b3b !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: clamp(28px, 5vw, 40px) !important;
+    margin-bottom: 12px !important;
+    text-shadow: none !important;
+}
+
+/* Kirti name */
+.container h2 {
+    color: #a51f48 !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 43px !important;
+    font-weight: bold;
+    text-shadow: 0 3px 12px rgba(165, 31, 72, .18) !important;
+    margin-bottom: 20px !important;
+}
+
+/* Paragraph text */
+.container .message {
+    color: #64243a !important;
+    font-size: 15px !important;
+    line-height: 1.9 !important;
+    max-width: 340px;
+    margin: 20px auto 25px !important;
+    text-shadow: none !important;
+}
+
+/* Button */
+.container button {
+    background: linear-gradient(
+        180deg,
+        #d94c78,
+        #982044
+    ) !important;
+
+    color: #ffffff !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 15px !important;
+    font-weight: bold;
+
+    padding: 15px 30px !important;
+    border: 1px solid #e99aaf !important;
+    border-radius: 50px !important;
+
+    box-shadow: 0 7px 18px rgba(117, 25, 57, .22) !important;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.container button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(117, 25, 57, .3) !important;
+}
+
+/* Footer */
+.container .footer {
+    color: #8b3651 !important;
+    font-size: 13px !important;
+    margin-top: 30px !important;
+}
+
+/* Mobile screen */
+@media (max-width: 500px) {
+    .container {
+        padding: 35px 20px !important;
+    }
+
+    .container h1 {
+        font-size: 29px !important;
+    }
+
+    .container h2 {
+        font-size: 36px !important;
+    }
+}

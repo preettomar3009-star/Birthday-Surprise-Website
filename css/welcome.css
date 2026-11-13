@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #12001f,
+        #510044,
+        #20003d
+    );
+
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.countdown-container {
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    max-width: 850px;
+    position: relative;
+    z-index: 2;
+
+    animation: fadeIn 2s ease;
+}
+
+.top-heart {
+    font-size: 55px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.subtitle {
+    color: #ffacd8;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: clamp(35px, 7vw, 65px);
+    color: #ff8bc9;
+
+    text-shadow:
+        0 0 10px #ff1493,
+        0 0 25px #ff1493,
+        0 0 45px #b026ff;
+}
+
+h2 {
+    font-size: clamp(23px, 4vw, 35px);
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+.description {
+    color: #f6c8e5;
+    line-height: 1.8;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 35px 0;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    width: 115px;
+    padding: 20px 10px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #ff80c4;
+    border-radius: 18px;
+
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.time-box span {
+    display: block;
+    font-size: 38px;
+    font-weight: bold;
+    color: #ff9bd4;
+    text-shadow: 0 0 15px #ff1493;
+}
+
+.time-box small {
+    font-size: 13px;
+    color: white;
+}
+
+#birthdayMessage {
+    color: #ffadd9;
+    margin: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+
+    background: linear-gradient(
+        90deg,
+        #ff1493,
+        #a020f0
+    );
+
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 25px #ff1493;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+footer {
+    margin-top: 35px;
+    color: #ffadd9;
+    font-size: 13px;
+}
+
+/* Stars */
+
+.star {
+    position: absolute;
+    color: white;
+    animation: twinkle 2s infinite alternate;
+    pointer-events: none;
+}
+
+/* Flowers */
+
+.flower {
+    position: absolute;
+    bottom: -50px;
+    font-size: 25px;
+    animation: flowerFloat 9s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.2;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
+
+@keyframes flowerFloat {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes heartbeat {
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .timer {
+        gap: 8px;
+    }
+
+    .time-box {
+        width: 75px;
+        padding: 15px 5px;
+    }
+
+    .time-box span {
+        font-size: 27px;
+    }
+
+    .time-box small {
+        font-size: 11px;
+    }
+}
+#cakeButton {
+    display: block;
+    margin: 25px auto;
+
+    padding: 16px 35px;
+
+    border: 2px solid #ff8acb;
+    border-radius: 50px;
+
+    background: linear-gradient(
+        90deg,
+        #ff1493,
+        #a020f0
+    );
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 25px #ff1493;
+
+    animation: fadeIn 2s ease;
+}
+
+#cakeButton:hover {
+    transform: scale(1.08);
+}

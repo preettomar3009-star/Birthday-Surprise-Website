@@ -1,0 +1,354 @@
+
+/* =====================================
+   KIRTI BIRTHDAY PAGE
+   LOVE LETTER PINK-CREAM THEME
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: #f5a6b5;
+    --cream: #fff8f1;
+    --light-cream: #ffe8e1;
+    --maroon: #821b3b;
+    --text: #64243a;
+    --rose: #b8325b;
+    --border: #eda2b1;
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    padding: 25px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            #fff7f0 0%,
+            transparent 65%
+        ),
+        linear-gradient(
+            135deg,
+            #f5a6b5,
+            #ffe1d9,
+            #f4a0b2
+        );
+
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--text);
+}
+
+/* MAIN CREAM CARD */
+
+.countdown-container {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 20px auto;
+    padding: 35px 30px;
+
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    background: linear-gradient(
+        145deg,
+        #fffaf4,
+        #ffe8e4
+    );
+
+    border: 2px dashed var(--border);
+    border-radius: 28px;
+
+    box-shadow:
+        0 15px 35px rgba(112, 34, 57, 0.17);
+
+    animation: fadeIn 1.2s ease;
+}
+
+/* HEART */
+
+.top-heart {
+    font-size: 55px;
+    margin-bottom: 12px;
+    animation: heartbeat 1.5s infinite;
+}
+
+/* TOP SMALL TEXT */
+
+.subtitle {
+    color: #a52a4c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 10px 0 18px;
+}
+
+/* MAIN HEADING */
+
+.countdown-container h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(35px, 6vw, 52px);
+    color: var(--maroon);
+    margin: 12px 0;
+    text-shadow: none;
+}
+
+/* SECOND HEADING */
+
+.countdown-container h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(24px, 4vw, 34px);
+    color: #a51f48;
+    margin: 12px 0 18px;
+    text-shadow: none;
+}
+
+/* DESCRIPTION */
+
+.description {
+    max-width: 480px;
+    margin: 15px auto 25px;
+
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* COUNTDOWN ROW */
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 13px;
+    margin: 28px auto 18px;
+}
+
+/* INDIVIDUAL COUNTDOWN BOX */
+
+.time-box {
+    width: 105px;
+    min-height: 100px;
+
+    padding: 15px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        145deg,
+        #fffaf4,
+        #ffe8e4
+    );
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    box-shadow:
+        0 7px 16px rgba(112, 34, 57, .10);
+
+    transition: .3s ease;
+}
+
+.time-box:hover {
+    transform: translateY(-4px);
+}
+
+/* COUNTDOWN NUMBERS */
+
+.time-box span {
+    display: block;
+
+    color: var(--rose);
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: bold;
+
+    text-shadow: none;
+}
+
+/* COUNTDOWN LABELS */
+
+.time-box small {
+    display: block;
+    margin-top: 5px;
+
+    color: var(--text);
+    font-size: 12px;
+}
+
+/* COUNTDOWN MESSAGE */
+
+#birthdayMessage {
+    display: block;
+    width: 100%;
+
+    margin: 20px auto 25px;
+
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* CAKE BUTTON */
+
+#cakeButton {
+    display: block;
+    margin: 25px auto 0;
+
+    padding: 15px 30px;
+
+    background: linear-gradient(
+        180deg,
+        #d94c78,
+        #982044
+    );
+
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    border: 1px solid #e99aaf;
+    border-radius: 50px;
+
+    box-shadow:
+        0 7px 18px rgba(117, 25, 57, .22);
+
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#cakeButton:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 10px 22px rgba(117, 25, 57, .28);
+}
+
+/* FOOTER */
+
+.countdown-container footer {
+    margin-top: 25px;
+
+    color: #8b3651;
+    font-family: Georgia, serif;
+    font-size: 13px;
+}
+
+/* STARS */
+
+.stars,
+.flowers {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.star {
+    position: absolute;
+    color: #ffffff;
+    animation: twinkle 2s infinite alternate;
+}
+
+.flower {
+    position: absolute;
+    bottom: -50px;
+    font-size: 23px;
+    animation: flowerFloat 9s linear infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes heartbeat {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes twinkle {
+    from {
+        opacity: .25;
+        transform: scale(.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes flowerFloat {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .countdown-container {
+        padding: 28px 16px;
+        border-radius: 22px;
+    }
+
+    .time-box {
+        width: 75px;
+        min-height: 78px;
+        padding: 12px 5px;
+    }
+
+    .time-box span {
+        font-size: 27px;
+    }
+
+    .time-box small {
+        font-size: 11px;
+    }
+
+    #cakeButton {
+        max-width: 100%;
+        padding: 14px 20px;
+        font-size: 13px;
+    }
+}

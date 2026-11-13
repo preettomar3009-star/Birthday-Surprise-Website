@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Birthday Wish For Kirti ❤️</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cake.css">
+</head>
+
+<body>
+
+    <!-- FLOATING HEARTS -->
+    <div class="background-hearts" id="hearts"></div>
+
+    <!-- FIREWORKS CANVAS -->
+    <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+
+    <!-- MAIN CAKE CONTAINER -->
+    <main class="cake-container">
+
+        <div class="top-heart">💗</div>
+
+        <p class="eyebrow">
+            YOUR SPECIAL MOMENT IS HERE
+        </p>
+
+        <h1>A Birthday Wish For My Dear Kirti ❤️</h1>
+
+        <p class="description">
+            Close your eyes, my love. Make your sweetest wish,
+            and let the stars celebrate you. ✨
+        </p>
+
+        <!-- 3D BIRTHDAY CAKE -->
+        <div class="cake-scene" id="cakeScene">
+
+            <!-- CANDLES -->
+            <div class="candles">
+
+                <div class="candle">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="candle-body"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="candle-body"></div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame"></div>
+                    <div class="wick"></div>
+                    <div class="candle-body"></div>
+                </div>
+
+            </div>
+
+            <!-- CAKE BODY -->
+            <div class="cake">
+
+                <!-- TOP LAYER -->
+                <div class="top-layer">
+                    <span>💗</span>
+                </div>
+
+                <!-- MIDDLE LAYER -->
+                <div class="middle-layer">
+
+                    <div class="cream-drip"></div>
+
+                    <span class="cake-pearl p1"></span>
+                    <span class="cake-pearl p2"></span>
+                    <span class="cake-pearl p3"></span>
+                    <span class="cake-pearl p4"></span>
+
+                </div>
+
+                <!-- BOTTOM LAYER -->
+                <div class="bottom-layer">
+
+                    <div class="cream-drip"></div>
+
+                    <span class="berry berry-one"></span>
+                    <span class="berry berry-two"></span>
+                    <span class="berry berry-three"></span>
+
+                </div>
+
+            </div>
+
+            <!-- CAKE PLATE -->
+            <div class="cake-plate"></div>
+
+        </div>
+
+        <!-- WISH MESSAGE -->
+        <h2 id="wishMessage">
+            Make a wish, my beautiful Kirti! 💗
+        </h2>
+
+        <p class="hint" id="wishHint">
+            Close your eyes and get ready for a little magic! ✨
+        </p>
+
+        <!-- BLOW CANDLES BUTTON -->
+        <button
+            id="wishButton"
+            type="button"
+            onclick="makeWish()">
+
+            Blow Out Your Candles 🕯️
+
+        </button>
+
+        <!-- NEXT PAGE BUTTON -->
+        <button
+            id="nextButton"
+            type="button"
+            onclick="nextPage()"
+            hidden>
+
+            Continue to Your Memories 💝
+
+        </button>
+
+        <!-- FOOTER -->
+        <footer>
+            Every wish of yours matters to me, Kirti ❤️
+            <br>
+            With endless love, Preet 💗
+        </footer>
+
+    </main>
+
+
+    <!-- =================================
+         BIRTHDAY POPUP
+    ================================== -->
+
+    <div class="birthday-modal" id="birthdayModal" hidden>
+
+        <div class="birthday-modal-card">
+
+            <div class="popup-confetti">
+                🎆 ✨ 🎉 ✨ 🎆
+            </div>
+
+            <div class="popup-heart">
+                ❤️
+            </div>
+
+            <p class="eyebrow">
+                A SPECIAL DAY FOR SOMEONE SPECIAL
+            </p>
+
+            <h2>Happy Birthday!</h2>
+
+            <h2>My Love Kirti ❤️</h2>
+
+            <p>
+                You deserve all the happiness, love and beautiful
+                moments in this world.
+            </p>
+
+            <strong>
+                You are my favourite blessing! 💗
+            </strong>
+
+            <div class="popup-confetti">
+                🎊 🌹 🎇 💕 🎇 🌹 🎊
+            </div>
+
+            <button
+                type="button"
+                id="popupContinue"
+                onclick="nextPage()">
+
+                Read Our Love Story ❤️
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/cake.js"></script>
+
+</body>
+</html>
